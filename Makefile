@@ -12,3 +12,6 @@ $(EXEC): $(OBJS)
 
 clean:
 	rm -rf $(OBJS) $(EXEC)
+
+format:
+	clang-format -style=Google -i *.c *.h
